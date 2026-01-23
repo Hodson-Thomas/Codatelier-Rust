@@ -1,6 +1,9 @@
 {
     "name": "Rust DevContainer with Trunk",
-    "image": "ghcr.io/hodson-thomas/codatelier-rust/devcontainer:latest",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
     "customizations": {
         "vscode": {
             "extensions": [
