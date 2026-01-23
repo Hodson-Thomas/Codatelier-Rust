@@ -1,46 +1,55 @@
-# Préparer son environnemnt
+# Préparer son environnement
 
-Pour plus de simplicité et éviter des setups longs et fastidieux, nous allons nous servir des Github CodeSpaces pour réaliser cet atelier.
+Pour éviter les installations fastidieuses et commencer à coder immédiatement, nous allons utiliser **GitHub Codespaces** pour cet atelier.
 
-> **GitHub Codespaces** est un environnement de développement complet hébergé dans le cloud, accessible directement depuis ton navigateur ou VSCode. Il te permet de coder sans installer quoi que ce soit localement : tu ouvres un dépôt GitHub, tu lances un Codespace, et tu te retrouves instantanément dans un environnement préconfiguré avec tous tes outils, extensions et dépendances déjà installés. C'est comme avoir une machine de dev préconfigurée qui démarre en quelques secondes, que tu peux utiliser depuis n'importe où, et qui s'éteint automatiquement quand tu ne l'utilises plus pour économiser les ressources.
+> **GitHub Codespaces**, c'est quoi ? Imagine une machine de développement complète qui se lance en quelques secondes, directement dans ton navigateur. Pas besoin d'installer Rust, Trunk ou quoi que ce soit sur ton ordinateur : tout est déjà prêt dans le cloud. Tu ouvres le dépôt, tu lances ton Codespace, et hop, tu codes ! Et quand tu fermes l'onglet, tout s'éteint automatiquement pour économiser les ressources.
 
-## Prérequis
+## Ce dont tu as besoin
 
-Voici les pré-requis pour cet atelier :
-- Un ordinateur (Windows, Linux ou Mac, peu importe)
-- Un compte Github
+C'est tout simple :
+- **Un ordinateur** (Windows, Linux, Mac, peu importe)
+- **Un compte GitHub** (gratuit)
 
 ## Préparer l'atelier
 
-Pour cet atelier, vous allez devoir "fork" (reprendre pour vous) le dépôt des sources mis à votre disposition.
+### 1. Fork le dépôt
 
-Pour cela :
-- Rendez-vous sur [https://github.com/Hodson-Thomas/Codatelier-Rust](https://github.com/Hodson-Thomas/Codatelier-Rust)
-- Cliquez sur le bouton `Fork` en haut à droite.
-- Validez les paramètres.
+Tu vas d'abord créer ta propre copie du projet :
 
-Vous aurez accès à votre propre copie des sources de l'atelier.
+1. Va sur [github.com/Hodson-Thomas/Codatelier-Rust](https://github.com/Hodson-Thomas/Codatelier-Rust)
+2. Clique sur le bouton **Fork** en haut à droite
+3. Valide les paramètres par défaut
 
-En suite, vous allez devoir lancer votre codespace pour qu'il se construise. Pour cela, depuis votre dépôt forké :
-- Cliquez sur `Code` en vert.
-- Cliquez sur `Codespaces`.
-- Cliquez sur le `+`.
-- Laissez en suite l'environnement se construire tout seul.
+Voilà, tu as maintenant ta propre version de l'atelier !
 
-> La construction peut prendre jusqu'à 10 minutes ; laissez simplement votre navigateur ouvert.
+### 2. Lance ton Codespace
 
-Une fois construit, vous devirez voir apparaitre dans le terminal en bas une sortie similaire à celle-ci :
+Maintenant, on va construire ton environnement de développement :
 
+1. Depuis ton dépôt forké, clique sur le bouton vert **Code**
+2. Sélectionne l'onglet **Codespaces**
+3. Clique sur le **+** pour créer un nouveau Codespace
+4. Laisse la magie opérer... ☕
+
+> ⏱️ La première construction prend environ **5 à 10 minutes**. C'est normal ! GitHub est en train d'installer Rust, Trunk et tous les outils dont tu auras besoin. Profite de ce temps pour te préparer un café. Laisse simplement la page ouverte.
+
+### 3. Vérifie que tout fonctionne
+
+Une fois la construction terminée, tu devrais voir apparaître dans le terminal (en bas de l'écran) quelque chose comme ça :
 ```txt
-rustc --version && cargo --version && trunk --version
 rustc 1.92.0 (ded5c06cf 2025-12-08)
 cargo 1.92.0 (344c4567c 2025-10-21)
 trunk 0.21.14
-Outcome: success User: vscode WorkspaceFolder: /workspaces/Codatelier-Rust
 ```
+
+Si tu vois ces trois lignes, c'est tout bon ! 🎉 Ton environnement est prêt.
 
 ## Le jour de l'atelier
 
-Vous pouvez retrouver votre codespace à cette adresse : [https://github.com/codespaces](https://github.com/codespaces).
+Pour retrouver ton Codespace le jour J, rien de plus simple :
 
-Il vous suffira de cliquer sur son nom (en gras) pour le ré-ouvrir.
+1. Va sur [github.com/codespaces](https://github.com/codespaces)
+2. Clique sur le nom de ton Codespace (en gras)
+3. Et c'est parti ! 🚀
+
+> 💡 **Astuce** : Ton Codespace se met en pause automatiquement quand tu ne l'utilises pas. Pas de panique, toutes tes modifications sont sauvegardées !
