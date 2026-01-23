@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./atelier/le-juste-prix/Cargo.toml",
+        "./atelier/mastermind/Cargo.toml",
+        "./release/le-juste-prix/Cargo.toml",
+        "./release/mastermind/Cargo.toml",
+    ]
+}

@@ -4,8 +4,11 @@ Dépôt contenant tout le nécessaire pour l'événement de Février 2026 sur la
 
 Vous pouvez retrouver toutes les infos sur l'évènement ici : [[DIJON] Créer ma première application Rust 🦀](https://guild.host/events/dijon-crer-ma-premire-0wqadb)
 
+> **📢 Avant l'évènement**  
+> Vous devrez préparer votre environnement en suivant [cette documentation](./docs/INSTALL.md)
+
 Vous pourrez trouver dans ce dépôt :
 
-🧰 De quoi préparer votre environnement pour l'atelier 🡆 [Préparer son environnemnt](./INSTALL.md)  
-📋 Les différentes parties de l'atelier 🡆 [L'atelier](./atelier)  
-💾 Une version finalisée et documentée des applications 🡆 [Solutions](./release)
+- 🧰 De quoi préparer votre environnement pour l'atelier 🡆 [Préparer son environnemnt](./docs/INSTALL.md)
+- 📋 Les différentes parties de l'atelier 🡆 [L'atelier](./atelier)  
+- 💾 Une version finalisée et documentée des applications 🡆 [Solutions](./release)
