@@ -29,6 +29,10 @@ Bienvenue dans l'atelier ! Voici le programme que nous allons suivre ensemble po
 - Version actuelle : 1.93.0
 - Sa mascotte : **Ferris** 🦀
 
+<div align="center">
+  <img src="https://rustacean.net/assets/rustacean-flat-happy.png" alt="Ferris le crabe, mascotte de Rust" width="300"/>
+</div>
+
 ---
 
 ## 💡 Avant de commencer
