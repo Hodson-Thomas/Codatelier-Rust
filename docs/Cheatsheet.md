@@ -55,7 +55,7 @@ Pour générer la documentation `cargo doc`.
 
 ## Quelques mots sur Rust
 
-- Rust est un langage qui mixe les performances des langages bas niveaux et l'ergonomie des langages modernes et de la programmation orientée objet.
+- Rust est un langage qui mixe les performances des langages bas niveaux ainsi que l'ergonomie des langages modernes et de la programmation orientée objet.
 
 - Rust est un langage compilé donc :
     - Les erreurs sont détectées à la compilation.
@@ -494,7 +494,7 @@ my_array[4] = 698;
 
 ### Les vecteurs
 
-Les vecteurs sont comme des tableaux mais ils ont une taille variable. 
+Un vecteur est comme un tableau mais il a une taille variable. 
 
 ```rust
 let mut my_vector = vec![1, 2, 3, 4];
@@ -601,7 +601,7 @@ pub enum Direction {
 let north = Direction::North;
 ```
 
-Il est possible d'associer des valeurs dans les variantes d'une énumérations. Les variantes des énumerations fonctionne comme les [tuple-structures](#les-tuple-structures).
+Il est possible d'associer des valeurs dans les variantes d'une énumération. Les variantes des énumerations fonctionnent comme les [tuple-structures](#les-tuple-structures).
 
 ```rust
 enum MyValue {
@@ -647,7 +647,7 @@ type MyAlias = i32;
 Pour déclarer une fonction, il faut :
 - le mot clé `pub` pour que la fonction soit publique (rappel [encapsulation](#encapsulation))
 - un nom (au format snake_case)
-- les paramètres en parenthèses (`<nom>: <type>` au format snake_case).
+- les paramètres entre parenthèses (`<nom>: <type>` au format snake_case).
 - Si la fonction retourne une valeur : `-> <type>`
 
 ```
@@ -682,7 +682,7 @@ fn change(mut val: MyStruct) {
 
 En Rust, une valeur ne peut être possédée **que par un seul élément**. C'est ce qu'on appelle le "Ownership". Voici quelques exemples :
 
-- Lorsqu'une valeur est transmise à une fonction, la variable perds la propriété de la valeur :
+- Lorsqu'une valeur est transmise à une fonction, la variable perd la propriété de la valeur :
 
 ```rust
 let a = 10;             // 'a' est propriétaire de la valeur 10.
@@ -734,14 +734,14 @@ fn invert_color(rgb: &mut Rgb) {
 
 ## L'implémentation
 
-Rust permet d'associer des fonctions aux énumérations et aux structures. Ces fonctions deviennent des "méthodes". On utilise le mot clé `self` pour référencer l'instance de la structure / de l'énumération. On utilise le mot clé `Self` pour référec
+Rust permet d'associer des fonctions aux énumérations et aux structures. Ces fonctions deviennent des "méthodes". On utilise le mot clé `self` pour référencer l'instance de la structure / de l'énumération. 
 
 Pour créer un block d'implémentation, on utilise le mot clé `impl` suivi du nom du type. 
 
 Il existe 5 types de méthodes : 
 
 - Les fonctions statiques qui n'accèdent pas à l'instance. Pour appeler la fonction il faut écrire : `<Type>::<fonction>()`.
-- Les fonctions non statiques. Pour appeler uen fonction non statique il faut écrire `<instance>.<fonction>()`: 
+- Les fonctions non statiques. Pour appeler une fonction non statique il faut écrire `<instance>.<fonction>()`: 
 
     - Les fonctions qui accèdent par référence à l'instance : `&self`.
     - Les fonctions qui accèdent par référence mutable à l'instance : `&mut self`.
@@ -791,7 +791,7 @@ La valeur `null` n'existe pas en Rust. A la place, on utilise l'Option. L'option
 - Some(valeur)
 - None
 
-De cette manière Rust garantie qu'il n'y aura jamais de `NullPointerException`. 
+De cette manière Rust garantit qu'il n'y aura jamais de `NullPointerException`. 
 
 ```rust
 let my_option = Some(10);
